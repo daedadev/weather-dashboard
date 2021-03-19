@@ -1,0 +1,204 @@
+body{
+
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+
+}
+
+header{
+
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    background-color: rgb(31, 49, 70);
+    color: white;
+
+}
+
+.main-container{
+
+   display: flex;
+   flex-direction: row;
+   width: 100%; 
+
+}
+
+/* Styling for uv Index based on UV Index value */
+.low{
+
+    background-color: green;
+    color: white;
+    padding: 1%;
+    border-radius: 5px;
+
+}
+
+.medium{
+
+    background-color: yellow;
+    color: white;
+    padding: 1%;
+    border-radius: 5px;
+
+}
+
+.high{
+    
+    background-color: orange;
+    color: white;
+    padding: 1%;
+    border-radius: 5px;
+
+}
+
+.very-high{
+
+    background-color: red;
+    color: white;
+    padding: 1%;
+    border-radius: 5px;
+
+}
+
+.extreme{
+
+    background-color: purple;
+    color: white;
+    padding: 1%;
+    border-radius: 5px;
+
+}
+
+
+/* Entire left side container */
+.left-container{
+
+    display: flex;
+    flex-direction: column;
+    width: 40%; 
+    padding: 1%;
+    background-color: rgb(219, 219, 219);
+
+}
+    /* Input and search button holder */
+    #search-container{
+
+        display: flex;
+        flex-direction: row;
+        width: 100%; 
+        padding-bottom: 5%;
+
+    }
+        #search-input{
+
+
+
+        }
+
+        #search-button{
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 10%;
+            background-color: rgb(37, 83, 235);
+            color: white;
+
+        }
+    /* Stored Search container */
+    #stored-searches{
+
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+
+    }
+
+        .stored-buttons{
+
+            display: flex;
+            flex-direction: column;
+            width: 100%; 
+            padding: 3%;
+            background-color: white;
+            border-style: solid;
+
+        }
+
+/* Entire Right Side Container */
+.right-container{
+
+    display: flex;
+    flex-direction: column;
+    margin: 1%;
+    width: 80%; 
+
+}
+
+    /* Top right container */
+    .current-day-container{
+
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        border-color: black;
+        border-style: solid;
+        padding: 1%;
+        border-width: 1px;
+        border-radius: 5px;
+        background-color: white;
+
+    }
+
+        /* UV Index Stuff */
+        #uv-holder{
+
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            width: 100%; 
+
+        }
+
+    /* Bottom 5-Day Forecast stuff */
+    .day-forecast-container{
+
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+
+    }
+
+        #future-forecasts-add{
+
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+
+        }
+
+    #future-forecasts{
+
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: center;
+    
+    }
+
+        .days-forecasts{
+
+            display: flex;
+            flex-direction: column;
+            width: 20%;
+            background-color: blue;
+            border-radius: 10px;
+            padding: 1%;
+            margin: 1%;
+            color: white;
+
+        }

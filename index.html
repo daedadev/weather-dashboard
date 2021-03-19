@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/d0e69beffb.js" crossorigin="anonymous"></script>    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>Weather Dashboard</h1>
+    </header>
+    <section class="main-container">
+        <section class="left-container">
+            <h1>Search For a City:</h1>
+            <div id="search-container">
+                <input id="search-input" type="text">
+                <button id="search-button"> <i class="fa fa-search"></i></button>
+            </div>
+
+            <div id="stored-searches">
+
+            </div>
+        </section>
+        <section class="right-container">
+            <article class="current-day-container">
+                <h3 id="current-day-date">Riverside (11/11/20)</h3>
+                <h1 id="current-temperature">Temperature: 90.0</h1>
+                <h1 id="current-humidity">Humidity: 41%</h1>
+                <h1 id="current-wind-speed">Wind Speed: 4.7 MPH</h1>
+                <div id="uv-holder">
+                    <h1>UV Index: </h1>
+                    <h1 class="red" id="current-uv"> 9.49</h1>
+                </div>
+            </article>
+            <article class="day-forecast-container" >
+                <h3>5-Day Forecast:</h3>
+                <div id="future-forecasts-add">
+
+                </div>
+            </article>
+        </section>
+    </section>
+</body>
+    <script src="https://rawgit.com/moment/moment/2.2.1/min/moment.min.js"></script>
+    <script src="./index.js"></script>
+</html>
