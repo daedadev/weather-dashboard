@@ -153,6 +153,7 @@ function futureForcasts(theCity){
 
                 var theIcon = document.getElementById("currentImage"+i)
                 theIcon.setAttribute("class", "fas fa-sun");
+                console.log("clear sky")
 
             }
         
@@ -160,56 +161,50 @@ function futureForcasts(theCity){
         
                 var theIcon = document.getElementById("currentImage"+i)
                 theIcon.setAttribute("class", "fas fa-cloud-sun");
+                console.log("few clouds")
                 
-            }
-        
-            if(data.list[i].weather.description = "scattered clouds"){
+            }else if(data.list[i].weather.description = "scattered clouds"){
         
                 var theIcon = document.getElementById("currentImage"+i)
                 theIcon.setAttribute("class", "fas fa-cloud-sun");
-                
-            }
-        
-            if(data.list[i].weather.description = "broken clouds"){
+                console.log("scattered clouds")
+
+            }else if(data.list[i].weather.description = "broken clouds"){
         
                 var theIcon = document.getElementById("currentImage"+i)
                 theIcon.setAttribute("class", "fas fa-cloud-sun");
-                
-            }
-        
-            if(data.list[i].weather.description = "shower rain"){
+                console.log("broken clouds")
+
+            }else if(data.list[i].weather.description = "shower rain"){
         
                 var theIcon = document.getElementById("currentImage"+i)
                 theIcon.setAttribute("class", "fas fa-cloud-rain");
-                
-            }
+                console.log("shower rain")
 
-            if(data.list[i].weather.description = "rain"){
+            }else if(data.list[i].weather.description = "rain"){
         
                 var theIcon = document.getElementById("currentImage"+i)
                 theIcon.setAttribute("class", "fas fa-cloud-showers-heavy");
-                
-            }
+                console.log("rain")
 
-            if(data.list[i].weather.description = "thunderstorm"){
+            }else if(data.list[i].weather.description = "thunderstorm"){
         
                 var theIcon = document.getElementById("currentImage"+i)
                 theIcon.setAttribute("class", "fas fa-poo-storm");
-                
-            }
+                console.log("thunderstorm")
 
-            if(data.list[i].weather.description = "snow"){
+            }else if(data.list[i].weather.description = "snow"){
         
                 var theIcon = document.getElementById("currentImage"+i)
                 theIcon.setAttribute("class", "fas fa-snowflake");
-                
-            }
+                console.log("snow")
 
-            if(data.list[i].weather.description = "mist"){
+            }else if(data.list[i].weather.description = "mist"){
         
                 var theIcon = document.getElementById("currentImage"+i)
                 theIcon.setAttribute("class", "	fas fa-cloud-sun-rain");
-                
+                console.log("mist")
+
             }
         }
     });
